@@ -1,11 +1,9 @@
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: sans-serif;
 }
-
 /* Navigation Bar */
-
 #home {
-  background-color:  #7600bc;
+  background-color: green;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
@@ -14,7 +12,6 @@ body {
   padding-bottom: 2cm;
   height: 5mm;
  }
-
 .topmenu {
   color: lightgray;
   margin: 10px;
@@ -25,7 +22,8 @@ body {
 
 .topmenu:hover {
   color: white;
-  /* Add the styles here */
+  font-weight: bolder;
+  text-decoration: underline;
 }
 
 .topdiv {
@@ -36,7 +34,8 @@ body {
 .profile_name {
   float: left;
   padding-left: 2cm;
-  /* Add the styles here */
+  font-size: 30px;
+  color:white;
 }
 
 .profile_name .contact_info {
@@ -92,19 +91,20 @@ h2 {
 }
 
 #about-me h1 {
-  font-size: 65px;
+  font-size: 48px;
   margin-top: 90px;
-  color: #7600bc;
+  color: green
 }
 
 #about-me p {
-  font-size: 25px;
+  font-size: 18px;
+  width:800px;
   color: rgb(128, 128, 128);
   margin-top: -1cm;
 }
 
 .profile_image {
-  width: 550px;
+  width: 400px;
   height: fit-content;
   vertical-align: middle;
   margin: 5px;
