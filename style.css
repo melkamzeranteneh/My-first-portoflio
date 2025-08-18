@@ -3,17 +3,22 @@ body {
 }
 /* Navigation Bar */
 #home {
-  background-color: green;
+  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: row;
+  background-color: #fca311;
   padding-bottom: 1cm;
   margin-left:-1cm;
   margin-right:-1cm;
   margin-top:-1cm;
   padding-top: 2cm;
   padding-bottom: 2cm;
-  height: 5mm;
- }
+  height: auto;
+  justify-content: space-around;
+}
 .topmenu {
-  color: lightgray;
+  float: left;
+  color: #E5E5E5;
   margin: 10px;
   padding: 20px;
   font-size: 20px;
@@ -35,12 +40,13 @@ body {
   float: left;
   padding-left: 2cm;
   font-size: 30px;
-  color:white;
+  font-weight: bold;
+  color:#000000;
 }
 
 .profile_name .contact_info {
   font-size: 15px;
-  font-style: italic;
+  font-weight: light;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -59,7 +65,7 @@ h2 {
   font-size: 50px;
   text-align: center;
   float: left;
-  color: #7600bc;
+  color: #14213d;
   margin: 30px;
   margin-left: 60px;
   margin-top: 40px;
@@ -80,27 +86,39 @@ h2 {
 /* Used in the About Me sections */
 
 .container {
+  padding-top: 30px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /* About Me */
 
 .about-me {
   display: flex;
+  flex-direction: row;
   align-items: center;
+
 }
 
+#about-me div{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
 #about-me h1 {
   font-size: 48px;
   margin-top: 90px;
-  color: green
+  color: #14213d;
 }
 
 #about-me p {
+  font-style:italic;
   font-size: 18px;
-  width:800px;
-  color: rgb(128, 128, 128);
-  margin-top: -1cm;
+  width:700px;
+  color: #fca311;
+  margin-top: 5px;
 }
 
 .profile_image {
@@ -119,15 +137,14 @@ h2 {
 }
 
 .skill {
-  border: 1px solid gray;
+  border: 2px solid rgb(199, 199, 199);
   display: block;
   border-radius: 6px;
   text-align: center;
-  margin: 50px;
+  margin: 30px;
   padding: 10px;
   width: 2in;
-  font-size: 20px;
-  box-shadow: 0 3px 10px gray;
+  font-size: 16px;
 }
 
 .skill img {
@@ -135,9 +152,10 @@ h2 {
   align-items: center;
 }
 
-.skills h6 {
+.skills h3 {
   align-items: center;
-  font-size: 20px;
+  color:#000000;
+  font-size: 24px;
   margin-block-start: 8px;
   margin-block-end: 5px;
   font-weight: bold;
@@ -145,7 +163,7 @@ h2 {
 
 .skills p {
   align-items: center;
-  font-size: 15px;
+  font-size: 12px;
   color: gray;
   margin-block-start: 5px;
   margin-block-end: 5px;
@@ -189,7 +207,7 @@ h2 {
 
 .all_recommendations {
   display: flex;
-  align-items: center;
+  align-items: start;
   margin-left: 1in;
   flex-direction: row;
   flex-flow: wrap;
@@ -199,22 +217,22 @@ h2 {
 .recommendation {
   font-style: italic;
   text-align: left;
-  width: 21.875rem;
-  padding: 1rem;
+  display: flex;
+  width: 300px;
+  height: min-content;
+  padding: 10px;
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
-  border:1px solid gray;
-  font-size: 18px;
-  height:150px
+  border:2px solid rgb(172, 170, 170);
+  font-size: 16px;
 }
 
 .recommendation span {
-  color: #7600bc;
+  color: #fca311;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: sans-serif;
 }
 
 /* Scroll to Top Button */
@@ -223,7 +241,7 @@ h2 {
   width: 48px;
   height: 48px;
   border-radius: 100%;
-  background-color: #7600bc;
+  background-color: #fca311;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +255,7 @@ h2 {
 
 .popup {
   width:400px;
-  background-color: #e8bcf0;
+  background-color: #f3d39e;
   border-radius: 3mm;
   top: 50%;
   left:50%;
@@ -254,8 +272,8 @@ h2 {
 
 .popup button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid #fca311;
+  color:  #fca311;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -268,8 +286,8 @@ h2 {
 
 .popup button:hover {
   background-color: #fff;
-  border: 2px solid #7600bc;
-  color: #7600bc;
+  border: 2px solid  #fca311;
+  color:  #fca311;
   display: block;
   font-weight: bolder;
   text-align: center;
@@ -280,7 +298,7 @@ h2 {
 /* Recommendation Form */
 
 input, textarea {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-family: sans-serif; 
   margin: 10px;  
   width:100%;
 }
@@ -300,8 +318,8 @@ fieldset {
 
 button {
   background-color: #fff;
-  border: 1px solid #7600bc;
-  color: #7600bc;
+  border: 1px solid  #fca311;
+  color:  #fca311;
   display: block;
   border-radius: 6px;
   text-align: center;
@@ -312,8 +330,8 @@ button {
 }
 
 button:hover {
-  background-color: #7600bc;
-  border: 1px solid #7600bc;
+  background-color: #fca311;
+  border: 1px solid  #fca311;
   color: #fff;
   display: block;
   border-radius: 6px;
